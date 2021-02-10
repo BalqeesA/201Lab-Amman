@@ -34,26 +34,30 @@ function q1() {
 }
 
 q1();
-let graduateYear = prompt("did you think  i graduate in 2011?");
-switch (graduateYear.toUpperCase()) {
+function q2() {
 
-  case 'YES':
-  case 'Y':
-    console.log('good guuss');
-    alert('good guuss');
-    break;
-  case 'NO':
-  case 'N':
-    alert('you don\'t know me well');
-    console.log('you don\'t know me well');
-    break;
-  default:
-    alert('try again');
-    console.log('try again');
-    break;
+
+
+  let graduateYear = prompt("did you think  i graduate in 2011?");
+  switch (graduateYear.toUpperCase()) {
+
+    case 'YES':
+    case 'Y':
+      console.log('good guuss');
+      alert('good guuss');
+      break;
+    case 'NO':
+    case 'N':
+      alert('you don\'t know me well');
+      console.log('you don\'t know me well');
+      break;
+    default:
+      alert('try again');
+      console.log('try again');
+      break;
+  }
+  console.log(graduateYear);
 }
-console.log(graduateYear);
-
 let jordanGirl = prompt("Am i from Jordan?");
 switch (jordanGirl.toUpperCase()) {
 
