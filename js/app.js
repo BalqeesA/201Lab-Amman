@@ -108,27 +108,31 @@ function q4() {
   console.log(Travel);
 }
 q4();
-let univarsity = prompt("My university was SUST?");
-switch (univarsity.toUpperCase()) {
+function q5() {
 
-  case 'YES':
-  case 'Y':
-    console.log('great ');
-    alert('great');
-    break;
-  case 'NO':
-  case 'N':
-    alert('do not say that');
-    console.log('do not say that');
-    break;
-  default:
-    alert('guess what you are wrong');
-    console.log('guess what you are wrong');
-    break;
+
+  let univarsity = prompt("My university was SUST?");
+  switch (univarsity.toUpperCase()) {
+
+    case 'YES':
+    case 'Y':
+      console.log('great ');
+      alert('great');
+      break;
+    case 'NO':
+    case 'N':
+      alert('do not say that');
+      console.log('do not say that');
+      break;
+    default:
+      alert('guess what you are wrong');
+      console.log('guess what you are wrong');
+      break;
+  }
+  console.log(univarsity);
+
 }
-console.log(univarsity);
-
-
+q5();
 
 for (let i = 0; i <= 4; i++) {
   let manyYears = prompt("how many years expariane?");
