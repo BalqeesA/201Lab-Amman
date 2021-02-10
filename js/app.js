@@ -58,26 +58,31 @@ function q2() {
   }
   console.log(graduateYear);
 }
-let jordanGirl = prompt("Am i from Jordan?");
-switch (jordanGirl.toUpperCase()) {
+q2();
+function q3() {
 
-  case 'YES':
-  case 'Y':
-    console.log('yup that\'s right');
-    alert('yup that/s right');
-    break;
-  case 'NO':
-  case 'N':
-    alert('don\'s say that');
-    console.log('don\'s say that');
-    break;
-  default:
-    alert('nupe');
-    console.log('nupe');
-    break;
+
+  let jordanGirl = prompt("Am i from Jordan?");
+  switch (jordanGirl.toUpperCase()) {
+
+    case 'YES':
+    case 'Y':
+      console.log('yup that\'s right');
+      alert('yup that/s right');
+      break;
+    case 'NO':
+    case 'N':
+      alert('don\'s say that');
+      console.log('don\'s say that');
+      break;
+    default:
+      alert('nupe');
+      console.log('nupe');
+      break;
+  }
+  console.log(jordanGirl);
 }
-console.log(jordanGirl);
-
+q3();
 let Travel = prompt("Do i love traveling?");
 switch (Travel.toUpperCase()) {
 
