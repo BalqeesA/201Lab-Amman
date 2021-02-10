@@ -1,5 +1,5 @@
 
-
+let score = 0
 function q1() {
 
 
@@ -12,6 +12,7 @@ function q1() {
     case 'Y':
       console.log('yaaaaay to me ');
       alert('yaaaaay to me');
+      score++;
       break;
     case 'NO':
     case 'N':
@@ -45,6 +46,7 @@ function q2() {
     case 'Y':
       console.log('good guuss');
       alert('good guuss');
+      score++;
       break;
     case 'NO':
     case 'N':
@@ -69,6 +71,7 @@ function q3() {
     case 'Y':
       console.log('yup that\'s right');
       alert('yup that/s right');
+      score++;
       break;
     case 'NO':
     case 'N':
@@ -94,6 +97,7 @@ function q4() {
     case 'Y':
       console.log('yaaaaaay');
       alert('yaaaaaay');
+      score++;
       break;
     case 'NO':
     case 'N':
@@ -118,6 +122,7 @@ function q5() {
     case 'Y':
       console.log('great ');
       alert('great');
+      score++;
       break;
     case 'NO':
     case 'N':
@@ -133,23 +138,27 @@ function q5() {
 
 }
 q5();
+function q6() {
 
-for (let i = 0; i <= 4; i++) {
-  let manyYears = prompt("how many years expariane?");
-  if (manyYears == 8) {
-    score++
-    alert('good job you guess it correct');
-    break;
+  for (let i = 0; i <= 4; i++) {
+    let manyYears = prompt("how many years expariane?");
+    if (manyYears == 8) {
+      score++
+      alert('good job you guess it correct');
+      break;
 
-  } else if (manyYears <= 8) {
-    alert('too low');
+    } else if (manyYears <= 8) {
+      alert('too low');
 
-  } else if (manyYears >= 8) {
-    alert('too high');
+    } else if (manyYears >= 8) {
+      alert('too high');
+    }
+
   }
+  alert('right answer is' + 8);
 
 }
-alert('right answer is' + 8);
+q6();
 
 
 let question = prompt("guess my top ten ");
