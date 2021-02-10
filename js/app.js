@@ -1,3 +1,30 @@
+
+let userName = prompt("Are you Hani?");
+switch (userName.toUpperCase()) {
+  
+  case 'YES':
+  case 'Y':
+    console.log('yaaaaay to me ');
+    alert('yaaaaay to me');
+    break;
+  case 'NO':
+  case 'N':
+    alert('sorry !!');
+    console.log('sorry !!');
+    break;
+  default:
+    alert('can you please tell e your name');
+    console.log('can you please tell e your name');
+    break;
+}
+console.log(userName);
+
+// let userName=prompt("whats your name?");
+let anotherUser = ("");
+if( userName || anotherUser){
+    alert('hello'+ userName);
+}
+
 let graduateYear = prompt("did you think  i graduate in 2011?");
 switch (graduateYear.toUpperCase()) {
 
@@ -80,13 +107,43 @@ console.log(univarsity);
 
 
 
-for (let i = 0; i < 4; i++) {
-  let manyYears = prompt("how many years expariane?")
+for (let i = 0; i <= 4; i++) {
+  let manyYears = prompt("how many years expariane?");
   if (manyYears == 8) {
+     score++
     alert('good job you guess it correct');
     break;
+  
+  } else if (manyYears <= 8) {
+    alert('too low'); 
+    
+  } else if (manyYears >= 8) {
+    alert('too high');  
+  }
 
+}
+  alert('right answer is'+ 8);
+
+
+let question = prompt ("guess my top ten " );
+for (let x =0 ; x <= 6; x++){
+
+  let topTen = ['travling', 'sweming' , 'reading'];
+
+  for (let i = 0; i <= topTen.length; i++) {
+    
+    console.log(question);
+   
+  if (topTen[i] == question) {
+    score++
+    alert('good job');
+    break;
+  }else{
+    
+    question = prompt (' try again ')
+  }
   }
 }
 
+alert('score is ' + score);
 
