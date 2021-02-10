@@ -160,26 +160,39 @@ function q6() {
 }
 q6();
 
+function q7() {
 
-let question = prompt("guess my top ten ");
-for (let x = 0; x <= 6; x++) {
+
 
   let topTen = ['travling', 'sweming', 'reading'];
+  let flag = false;
+  for (let x = 0; x < 6; x++) {
 
-  for (let i = 0; i <= topTen.length; i++) {
+    let question = prompt("guess my top ten ").toLowerCase();;
 
-    console.log(question);
+    for (let i = 0; i < topTen.length; i++) {
 
-    if (topTen[i] == question) {
-      score++
-      alert('good job');
-      break;
-    } else {
+      console.log(question);
 
-      question = prompt(' try again ')
+      if (topTen[i] == question) {
+        score++;
+        alert('good job');
+        flag = true;
+        break;
+      }
+
     }
-  }
-}
+    if (flag == true) {
+      break;
+    }
+    else {
 
+      alert('is not correct')
+    }
+
+  }
+  alert(`my top ten is ${topTen}`)
+}
+q7();
 alert('score is ' + score);
 
