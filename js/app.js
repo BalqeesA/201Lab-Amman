@@ -83,26 +83,31 @@ function q3() {
   console.log(jordanGirl);
 }
 q3();
-let Travel = prompt("Do i love traveling?");
-switch (Travel.toUpperCase()) {
 
-  case 'YES':
-  case 'Y':
-    console.log('yaaaaaay');
-    alert('yaaaaaay');
-    break;
-  case 'NO':
-  case 'N':
-    alert('no , you are wrong');
-    console.log('no , you are wrong');
-    break;
-  default:
-    alert('guess again');
-    console.log('guess again');
-    break;
+function q4() {
+
+
+  let Travel = prompt("Do i love traveling?");
+  switch (Travel.toUpperCase()) {
+
+    case 'YES':
+    case 'Y':
+      console.log('yaaaaaay');
+      alert('yaaaaaay');
+      break;
+    case 'NO':
+    case 'N':
+      alert('no , you are wrong');
+      console.log('no , you are wrong');
+      break;
+    default:
+      alert('guess again');
+      console.log('guess again');
+      break;
+  }
+  console.log(Travel);
 }
-console.log(Travel);
-
+q4();
 let univarsity = prompt("My university was SUST?");
 switch (univarsity.toUpperCase()) {
 
